@@ -1,0 +1,30 @@
+PERMA
+    Perma is a scriptable public ledger that is resistant to manipulation.
+    It is not a smart contract platform. It is a dumb object platform.
+    It is a tool. It unlocks new coordination strategies.
+    It can be used for good, and for evil.
+    It empowers you to define an organization whose rules allow it to re-interpret chain state.
+    It empowers you to to define an app whose code defines its terms and whose users must manage risk.
+    Perma is not configured to redistribute wealth in the name of safety for very long.
+    If it can't sustain itself, it will die. The most noble way is a clean kill by its successor.
+    It doesn't care about you one bit.
+Block reward function:
+    Supply(0) = 0;
+    Supply(n) = Supply(n-1) + Reward(n)
+    Reward(n) = (10**18 - Supply(n-1)) / 500000
+POW:
+    Remove "difficulty bomb" factor from Ethereum implementation.
+Network ID
+    42
+genesis.json
+    {
+        "nonce": "<HARD_FORK_BLOCKHASH>",
+        "timestamp": "<HARD_FORK_TIMESTAMP>",
+        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "extraData": "<keccak(this_file)>",
+        "gasLimit": "0x80000000",
+        "difficulty": "0x424242",
+        "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {}
+    }
