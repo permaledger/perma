@@ -4,10 +4,12 @@ Perma ("permaledger") bootstrapping guidelines
 - Genesis block is determined by Ethereum hard fork block hash / timestamp. Network id 42.
     - Testnet uses proposed soft fork parameters, network id 43
 - Quick and dirty distribution with exponentially decaying block rewards has two goals:
-    1) It emulates a proof of burn from the ETH miners and holders directly after the hard fork block.
-    2) It should quickly reach an equilibrium state where transaction fees pay for POW to the extent that apps collectively can and want to subsidize the chain's security.
+
+    - It emulates a proof of burn from the ETH miners and holders directly after the hard fork block.
+    - It should quickly reach an equilibrium state where transaction fees pay for POW to the extent that apps collectively can and want to subsidize the chain's security.
+
 - The base token, "FEE", is to be framed as a claim on finite future network resources (especially cpu-hours). The supply converges to 1 FEE.
--`bootstrap.txt` is insignficant when not "instantiated" in a chain. "It" can be "modified"; the bootstrap document actually encoded in Perma cannot.
+- `bootstrap.txt` is insignficant when not "instantiated" in a chain. "It" can be "modified"; the bootstrap document actually encoded in Perma cannot.
 
 
 #### Join "Tempa1" Test Network
