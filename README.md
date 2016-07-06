@@ -1,6 +1,8 @@
 Perma ("permaledger") bootstrapping guidelines
 ---
 
+[![Join the chat at https://gitter.im/permaledger/perma](https://badges.gitter.im/permaledger/perma.svg)](https://gitter.im/permaledger/perma?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 - Genesis block is determined by Ethereum hard fork block hash / timestamp. Network id 42.
     - Testnet uses proposed soft fork parameters, network id 43
 - Quick and dirty distribution with exponentially decaying block rewards has two goals:
